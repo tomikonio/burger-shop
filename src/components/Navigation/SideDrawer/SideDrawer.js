@@ -6,7 +6,7 @@ import Backdrop from '../../UI/Backdrop/Backdrop';
 import classes from './SideDrawer.module.css';
 
 const SideDrawer = props => {
-  const attachedClasses = [classes.SideDrawer, classes.Close];
+  const attachedClasses = [classes.SideDrawer, classes.Close]; // the sidedrawer is opened/closed with CSS (!)
   if (props.open === true) {
     attachedClasses.pop();
     attachedClasses.push(classes.Open);
